@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <form novalidate  action="#" class="form_body">
+                <h1>Форма заявки на работу в зоопарке</h1>
+                <div class="form_item">
+                    <label for="formName" class="form_label">Имя*</label>
+                    <input type="text" id="formName" class="form_input" placeholder="Имя" required>
+                </div>
+                <div class="nameError"></div>
+                <div class="form_item">
+                    <label for="mail" class="form_label">Электронная почта*</label>
+                    <input type="email" id="mail" class="form_input" placeholder="Электронная почта " pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" required>
+                </div>
+                <div class="mailError"></div>
+                <div class="form_item">
+                    <label for="phone" class="form_label">Телефон*</label>
+                    <input type="tel" id="phone" class="form_input" placeholder="Телефон" required>
+                </div>
+                <div class="phoneError"></div>
+                <div class="form_item">
+                    <label for="age" class="form_label">Возраст</label>
+                    <input type="number" id="age" class="form_input" placeholder="Возраст" max="100" min="18">
+                </div>
+                <div class="form_item">
+                    <label for="sex" class="form_label">Выберите пол</label>
+                    <select name="sex" id="sex">
+                        <option value="man">Мужской</option>
+                        <option value="woman">Женский</option>
+                    </select>
+                </div>
+                <div class="form_item">
+                    <label for="info" class="form_label">Перечислите личные качества</label>
+                    <textarea name="info" class="form_input info" id="info" cols="30" rows="10" minlength="3"></textarea>
+                </div>
+                <div class="form_item choose_animal">
+                    <div class="choose">Выберите ваших любимых животных</div>
+                    <p><input type="checkbox" name="animals" value="zebra"> Зебра</p>
+                    <p><input type="checkbox" name="animals" value="elefant"> Слон</p>
+                    <p><input type="checkbox" name="animals" value="cat"> Кошка</p>
+                    <p><input type="checkbox" name="animals" value="antelope"> Антилопа</p>
+                    <p><input type="checkbox" name="animals" value="pigeon"> Голубь</p>
+                    <p><input type="checkbox" name="animals" value="anaconda"> Анаконда</p>
+                    <p><input type="checkbox" name="animals" value="crab">Краб</p>
+                    <p><input type="checkbox" name="animals" value="man">Человек</p>
+                    <div class="animalsError"></div>
+                </div>
+                <div class="form_item">
+                    <div class="checkbox">
+                        <input type="checkbox" id="formAgreement" checked>
+                        <label for="formAgreement" class="checkbox_label"><span> Я даю свое согласие на обработку персональных данных</span></label>
+                    </div>
+                    <div class="checkError"></div>
+                </div>
+                <button class="registration"> Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

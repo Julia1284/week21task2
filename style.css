@@ -1,0 +1,61 @@
+.form {
+    max-width: 500px;
+    margin: 0px auto;
+    background-color: seashell;
+}
+
+.form_body {
+    padding: 0px 0px 0px 20px;
+}
+
+.form_item {
+    margin: 10px 0px 10px 0px
+}
+
+.form_label {
+    display: block;
+
+}
+
+.form_input {
+    width: 80%;
+    height: 40px;
+    padding: 0px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+textarea.form_input {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.choose_animal {
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.choose {
+    grid-area: 1/1/2/5;
+}
+
+.registration {
+    background-color: #FFDAB9;
+    min-height: 40px;
+    border-radius: 30px;
+    border-color: #FFDAB9;
+    width: 90%;
+}
+
+.nameError,
+.mailError,
+.phoneError,
+.checkError,
+.animalsError {
+    color: red;
+}
+
+.animalsError {
+    grid-area: 4/1/5/5;
+}
